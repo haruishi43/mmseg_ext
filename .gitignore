@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# dev
+.DS_Store
+
+# project specific
+/work_dirs
+work_dirs/
+tmp_work_dirs/
+
+# wandb
+wandb/
+artifacts/
