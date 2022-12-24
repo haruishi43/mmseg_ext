@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 
+import mmseg
 from mmcv.utils import collect_env as collect_base_env
 from mmcv.utils import get_git_hash
-
-import potato
 
 
 def collect_env():
     """Collect the information of the running environments."""
     env_info = collect_base_env()
-    env_info["AsahiAero"] = f"{potato.__version__}+{get_git_hash()[:7]}"
+    env_info["MMSEG"] = f"{mmseg.__version__}+{get_git_hash()[:7]}"
 
     return env_info
 

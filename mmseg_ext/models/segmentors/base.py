@@ -17,7 +17,7 @@ from mmseg.ops import resize
 
 from .. import builder
 from ..seg_heads.multitask_decode_head import BaseMultiTaskDecodeHead
-from potato.visualize import beautify_edge
+from mmseg_ext.visualize import beautify_edge
 
 
 class BaseJointSegDet(BaseSegmentor):
@@ -229,7 +229,7 @@ class BaseJointSegDet(BaseSegmentor):
                 has: 'img_shape', 'scale_factor', 'flip', and may also contain
                 'filename', 'ori_shape', 'pad_shape', and 'img_norm_cfg'.
                 For details on the values of these keys see
-                `potato/datasets/pipelines/formatting.py:Collect`.
+                `mmseg_ext/datasets/pipelines/formatting.py:Collect`.
             gt_semantic_seg (Tensor): Semantic segmentation masks
                 used if the architecture supports semantic segmentation task.
 
@@ -409,7 +409,7 @@ class BaseJointSegDet(BaseSegmentor):
                 'scale_factor', 'flip', and may also contain
                 'filename', 'ori_shape', 'pad_shape', and 'img_norm_cfg'.
                 For details on the values of these keys see
-                `potato/datasets/pipelines/formatting.py:Collect`.
+                `mmseg_ext/datasets/pipelines/formatting.py:Collect`.
             rescale (bool): Whether rescale back to original shape.
 
         Returns:

@@ -6,7 +6,7 @@ import mmcv
 from mmcv.utils import print_log
 from pyEdgeEval.edge_tools.transforms import Mask2Edge
 
-from blette.utils import get_root_logger
+from mmseg_ext.utils import get_root_logger
 from .builder import EDGE_DATASETS
 from .base_edge_dataset import BaseBinaryEdgeDataset
 from .pipelines import Compose, BinaryEdgeFormatBundle, LoadAnnotations, LoadEdges

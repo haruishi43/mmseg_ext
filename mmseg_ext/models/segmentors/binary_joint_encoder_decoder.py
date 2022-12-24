@@ -43,7 +43,7 @@ class BinaryJointEncoderDecoder(BaseJointSegDet):
                 has: 'img_shape', 'scale_factor', 'flip', and may also contain
                 'filename', 'ori_shape', 'pad_shape', and 'img_norm_cfg'.
                 For details on the values of these keys see
-                `potato/datasets/pipelines/formatting.py:Collect`.
+                `mmseg_ext/datasets/pipelines/formatting.py:Collect`.
             gt_semantic_seg (Tensor): Semantic segmentation masks
                 used if the architecture supports semantic segmentation task.
 

@@ -240,7 +240,7 @@ class BaseSegDataset(Dataset, metaclass=ABCMeta):
         if efficient_test is not None:
             warnings.warn(
                 "DeprecationWarning: ``efficient_test`` has been deprecated "
-                "since potato v0.16, the ``get_gt_seg_maps()`` is CPU memory "
+                "since mmseg v0.16, the ``get_gt_seg_maps()`` is CPU memory "
                 "friendly by default. "
             )
 

@@ -15,7 +15,7 @@ from ..builder import PIPELINES
 
 @PIPELINES.register_module(force=True)
 class LoadAnnotations(MMSEG_LoadAnnotations):
-    """blette's LoadAnnotations (extention of mmseg)
+    """LoadAnnotations (extention of mmseg)
 
     - loads instance segmentation for instance-sensitive edges
     """
